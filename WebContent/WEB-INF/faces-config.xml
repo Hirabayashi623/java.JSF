@@ -1,0 +1,144 @@
+<faces-config
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+	version="1.2">
+
+<!--	###########################################################################
+		##		Bean設定
+		########################################################################### -->
+	<managed-bean>
+		<managed-bean-name>sample01Bean</managed-bean-name>
+		<managed-bean-class>sample.sample01.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>sample02Bean</managed-bean-name>
+		<managed-bean-class>sample.sample02.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>sample03Bean</managed-bean-name>
+		<managed-bean-class>sample.sample03.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>sample04Bean</managed-bean-name>
+		<managed-bean-class>sample.sample04.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>sample07Bean</managed-bean-name>
+		<managed-bean-class>sample.sample07.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>sample08Bean</managed-bean-name>
+		<managed-bean-class>sample.sample08.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>sample09Bean</managed-bean-name>
+		<managed-bean-class>sample.sample09.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>sample10Bean</managed-bean-name>
+		<managed-bean-class>sample.sample10.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>sample11Bean</managed-bean-name>
+		<managed-bean-class>sample.sample11.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>sample12Bean</managed-bean-name>
+		<managed-bean-class>sample.sample12.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>sample13Bean</managed-bean-name>
+		<managed-bean-class>sample.sample13.SampleBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+<!-- 	###########################################################################
+		##		ナビゲーション設定
+		########################################################################### -->
+	<navigation-rule>
+		<from-view-id>/jsp/sample/sample10_1.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>next</from-outcome>
+			<to-view-id>/jsp/sample/sample10_2.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+<!-- 	###########################################################################
+		##		コンバータ設定
+		########################################################################### -->
+	<converter>
+		<converter-id>int</converter-id>
+		<converter-class>javax.faces.convert.IntegerConverter</converter-class>
+	</converter>
+
+	<converter>
+		<converter-id>byte</converter-id>
+		<converter-class>javax.faces.convert.ByteConverter</converter-class>
+	</converter>
+
+	<converter>
+		<converter-id>character</converter-id>
+		<converter-class>javax.faces.convert.CharacterConverter</converter-class>
+	</converter>
+
+	<converter>
+		<converter-id>dateTime</converter-id>
+		<converter-class>javax.faces.convert.DateTimeConverter</converter-class>
+	</converter>
+
+	<converter>
+		<converter-id>double</converter-id>
+		<converter-class>javax.faces.convert.DoubleConverter</converter-class>
+	</converter>
+
+	<converter>
+		<converter-id>float</converter-id>
+		<converter-class>javax.faces.convert.FloatConverter</converter-class>
+	</converter>
+
+	<converter>
+		<converter-id>Long</converter-id>
+		<converter-class>javax.faces.convert.LongConverter</converter-class>
+	</converter>
+
+	<converter>
+		<converter-id>Number</converter-id>
+		<converter-class>javax.faces.convert.NumberConverter</converter-class>
+	</converter>
+
+	<converter>
+		<converter-id>short</converter-id>
+		<converter-class>javax.faces.convert.ShortConverter</converter-class>
+	</converter>
+
+<!-- 	###########################################################################
+		##		バリデータ設定
+		########################################################################### -->
+	<validator>
+		<validator-id>longRange</validator-id>
+		<validator-class>javax.faces.validator.LongRangeValidator</validator-class>
+	</validator>
+
+</faces-config>
